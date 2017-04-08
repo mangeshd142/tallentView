@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.sampleContest.model.SampleContestResult" table="t_sample_contest_result">
+		<id name="res_id">
+			<generator class="increment"/>
+		</id>
+		<property name="user_id" not-null="true"/>
+		<property name="contest_id" not-null="true"/>
+		<property name="result"/>	
+		<property name="complition_time"/>
+		<property name="sub_date"/>
+	</class>
+</hibernate-mapping>

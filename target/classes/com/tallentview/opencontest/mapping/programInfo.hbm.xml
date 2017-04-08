@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.opencontest.model.OpenProgramBean" table="t_open_program_info">
+		<id name="prog_id">
+			<generator class="increment"/>
+		</id>
+		
+		<property name="prog_language"/>
+		<property name="prog_name"/>
+		<property name="prog_disc"/>	
+		<property name="timelimit"/>
+		<property name="path"/>
+		<property name="testcases"/>
+	</class>
+</hibernate-mapping>

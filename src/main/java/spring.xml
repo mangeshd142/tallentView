@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+<bean id="sessionfactory" class="com.tallentview.tallentview.hibernateconf.HibernateDaoImpl">
+	<property name="sessionfactory" ref="hibernateSessionFactory"></property>
+</bean> 
+
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/talent_view" />
+		<property name="username" value="root" />
+		<property name="password" value="123456" />
+		<!-- <property name="password" value="Megamind@1492tallentview"/> -->
+	</bean>
+	
+
+	<bean id="hibernateSessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mappingResources">
+			<list>
+				<value>com/tallentview/tallentview/maping/user.hbm.xml</value>
+				<value>com/tallentview/tallentview/maping/profile.hbm.xml</value>
+				<value>com/tallentview/tallentview/maping/education.hbm.xml</value>
+				<value>com/tallentview/tallentview/maping/profession.hbm.xml</value>
+				<value>com/tallentview/tallentview/maping/forgot.hbm.xml</value>
+				<value>com/tallentview/tallentview/maping/userAccountDetails.hbm.xml</value>
+				<value>com/tallentview/tallentview/maping/support.hbm.xml</value>
+				
+				<value>com/tallentview/sampleContest/mapping/samplecontestinfo.hbm.xml</value>
+				<value>com/tallentview/sampleContest/mapping/samplecontestresult.hbm.xml</value>
+				<value>com/tallentview/sampleContest/mapping/sampleproginfo.hbm.xml</value>
+				<value>com/tallentview/sampleContest/mapping/sampleproglang.hbm.xml</value>
+				
+				<value>com/tallentview/contest/mapping/contestinfo.hbm.xml</value>
+				<value>com/tallentview/contest/mapping/programInfo.hbm.xml</value>
+				<value>com/tallentview/contest/mapping/proglang.hbm.xml</value>
+				<value>com/tallentview/contest/mapping/userContestResult.hbm.xml</value>
+				<value>com/tallentview/contest/mapping/payment_info.hbm.xml</value>
+				<value>com/tallentview/contest/mapping/contestWinner.hbm.xml</value>
+				
+				<value>com/tallentview/opencontest/mapping/contestinfo.hbm.xml</value>
+				<value>com/tallentview/opencontest/mapping/programInfo.hbm.xml</value>
+				<value>com/tallentview/opencontest/mapping/opencontestResult.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.current_session_context_class">thread</prop>
+				<prop key="hibernate.show_sql">false</prop> 
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+ 
+</beans>

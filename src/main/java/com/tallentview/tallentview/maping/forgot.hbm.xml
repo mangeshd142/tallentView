@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.tallentview.user.model.Forgot" table="t_forgot">
+		<id name="forgot_id">
+			<generator class="native"/>
+		</id>
+		<property name="forgot_email" />
+		<property name="temp_password"/>
+		
+	</class>
+</hibernate-mapping>

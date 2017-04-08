@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.contest.model.PaymentBean" table="t_payment_info">
+		<id name="transaction_id">
+			<generator class="uuid"/>
+		</id>
+		<property name="order_id"/>
+		<property name="payment_id"/>
+		<property name="user_id"/>	
+		<property name="contest_id"/>
+		<property name="time"/>
+		<property name="status"/>
+		<property name="amount"/>
+	</class>
+</hibernate-mapping>

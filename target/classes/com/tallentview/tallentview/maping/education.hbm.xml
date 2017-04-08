@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.tallentview.user.model.EducationBean" table="t_user_education">
+		<id name="edu_id">
+			<generator class="native"/>
+		</id>
+		<property name="institute_name"/>
+		<property name="degree"/>
+		<property name="field"/>	
+		<property name="passout_year"/>
+		<property name="percentage"/>
+		<property name="user_id"/>
+	</class>
+</hibernate-mapping>

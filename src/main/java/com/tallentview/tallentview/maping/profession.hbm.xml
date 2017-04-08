@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.tallentview.user.model.ProfessionBean" table="t_user_profession">
+		<id name="prof_id">
+			<generator class="native"/>
+		</id>
+		<property name="companyName"/>
+		<property name="profile"/>
+		<property name="currently_working"/>	
+		<property name="experience"/>
+		<property name="description"/>
+		<property name="user_id"/>
+	</class>
+</hibernate-mapping>

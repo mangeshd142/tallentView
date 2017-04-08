@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.tallentview.module.SupportBean" table="t_support">
+		<id name="support_id">
+			<generator class="native"/>
+		</id>
+		<property name="name"/>
+		<property name="email"/>
+		<property name="subject"/>	
+		<property name="message"/>
+	</class>
+</hibernate-mapping>

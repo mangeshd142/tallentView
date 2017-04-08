@@ -1,0 +1,146 @@
+/* CSS Document */
+#wrapper 				{
+							width: 1100px;
+							margin: 10px auto;
+							background-color: #e5e5e5 ;
+						}
+						
+#Services				{
+							float: right;
+							padding: 8px;
+						}
+						
+#Header					{
+							clear:both;
+						}
+						
+#logo					{
+							float: left;
+							margin: 10px 0;
+						}
+						
+#cart					{
+							float:right;
+							margin-top:25px;
+						}
+						
+#form					{
+							/*margin:400px;*/
+							margin-left:350px;
+							margin-top:20px;
+							
+							
+						}
+						
+#topnev					{
+							 clear:both;
+							 margin:10px 10px;
+							 border-top:1px #000 dotted;
+							 border-bottom:1px #000 dotted;
+						}
+#topnev ul				{
+							list-style-type:none;
+							padding:0; margin:0;
+						}
+#topnev ul li			{
+							display:inline-block; 			
+							list-style-type:none;
+							margin:0 40px 0 0;
+						}
+						
+#topnev ul li:hover		{
+							background-color:#E4E4E4;
+							box-shadow:#333;
+							border-left:1px #000000 solid;
+							border-right:1px #000000 solid;
+						}
+#topnev ul li a,visited	{
+							display:block; 
+							padding:5px;
+							color:#000;
+						}
+										
+#topnev ul li:hover ul  {
+							display:block;
+						}
+#topnev ul ul 			{
+							display:none;
+							background:#E4E4E4;
+							position:absolute;
+						}
+#topnev ul ul li		{
+							display:block;
+							color:#666;
+						}
+#topnev ul ul li:hover	{
+							background-color:#CCC;
+							text-decoration:underline;
+							border:none;
+						}
+						
+						
+#topnev a:link			{font-weight:bold; text-decoration:none; color:#333;	}
+#topnev a:visited		{font-weight:bold; text-decoration:none; color:#333;	}
+#topnev a:active		{font-weight:bold; text-decoration:none; color:#333;	}
+#topnev a:hover			{font-weight:bold; text-decoration:none; color:#333;	}
+#topnev a:focus			{font-weight:bold; text-decoration:none; color:#333;	}
+#deals					{border-top:1px #000 dotted;
+							}
+#deals ul li			{
+							
+							display:inline; 
+							list-style:none
+							overflow: hidden;	
+									
+							
+						}
+.details			{
+							float:left;
+							margin:10px 10px;
+							
+							
+						}
+#title					{
+							clear:both;
+							border-bottom:1px #000 dotted;
+						}
+#footer					{
+							clear:both;
+							border-top:1px #000 dotted;
+						}
+
+#footer	 ul li 			{
+							display:inline; 
+							list-style:none
+							overflow: hidden;
+						}
+.footerlist				{
+							float:left;
+							margin:10px 50px;
+						}
+.textty { 		
+		padding: 8px; 
+		margin: 4px 0 20px 0; 
+		background: #fff; 
+		width: 320px; 
+		font-size: 14px; 
+		color: #555; 
+		border: 1px #ddd solid;
+		
+		/* -- CSS3 Shadow - create a shadow around each input element -- */ 
+		-webkit-box-shadow: 0px 0px 4px #aaa;
+		-moz-box-shadow: 0px 0px 4px #aaa; 
+		box-shadow: 0px 0px 4px #aaa;
+		
+		/* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */		
+		-webkit-transition: background 0.3s linear;							
+	}
+
+.submit{
+			vertical-align:middle;
+		}
+
+
+
+
+

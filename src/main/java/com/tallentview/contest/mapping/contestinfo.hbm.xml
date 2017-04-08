@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.contest.model.ContestInfo" table="t_contest_info">
+		<id name="contest_id">
+			<generator class="increment"/>
+		</id>
+		<property name="language"/>
+		<property name="name"/>
+		<property name="contest_info"/>	
+		<property name="participant"/>
+		<property name="start_date"/>
+		<property name="end_date"/>
+		<property name="prog_id"/>
+		<property name="entry_fee"/>
+		<property name="prise"/>
+	</class>
+</hibernate-mapping>

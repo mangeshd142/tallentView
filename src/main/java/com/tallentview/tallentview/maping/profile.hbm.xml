@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    
+<hibernate-mapping>
+	<class name="com.tallentview.tallentview.user.model.Profile" table="t_profile">
+		<id name="pro_id">
+			<generator class="native"/>
+		</id>
+		<property name="dob"/>
+		<property name="phoneno"/>
+		<property name="address"/>	
+		<property name="country"/>
+		<property name="state"/>
+		<property name="city"/>
+		<property name="pincode"/>
+		<property name="skills"/>
+		<property name="wallet"/>
+		<property name="userid" unique="true"/>
+	</class>
+</hibernate-mapping>
