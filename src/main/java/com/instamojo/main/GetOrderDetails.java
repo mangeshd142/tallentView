@@ -23,6 +23,7 @@ try {
 	   // PaymentOrderDetailsResponse paymentOrderDetailsResponse = api.getPaymentOrderDetailsByTransactionId(orderId);
 
 	    // print the status of the payment method.
+	//sdaksjdasjdashj
 	    status = paymentOrderDetailsResponse.getStatus();
 	    System.out.println(status);
 	    
